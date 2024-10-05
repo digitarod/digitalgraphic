@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>デジタルグラフィック2025</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="favicon_tomei.png">
+</head>
+<body>
+    <!-- Header with Hamburger Menu -->
+    <div class="el_humburger"><!--ハンバーガーボタン-->
+        <div class="el_humburger_wrapper">
+          <span class="el_humburger_bar top"></span>
+          <span class="el_humburger_bar middle"></span>
+          <span class="el_humburger_bar bottom"></span>
+        </div>
+      </div>
+     
+      <header class="navi"><!--ナビゲーション-->
+        <div class="navi_inner">
+          <div class="navi_item"><a href="#section1">ホーム</a></div>
+          <div class="navi_item"><a href="#section2">カンファレンス概要</a></div>
+          <div class="navi_item"><a href="#section3">スピーカー紹介</a></div>
+          <div class="navi_item"><a href="#section4">未来を切り開く</a></div>
+          <div class="navi_item"><a href="#section5">お問い合わせ</a></div>
+        </div>
+      </header>
+    <!-- Section 1 -->
+    <section id="section1" class="section1">
+        <div class="container">
+            <h1>デジタル グラフィック2025</h1>
+            <p>2025年2月21日〜23日<br>スカイライトホール</p>
+            <button onclick="location.href='#section5'">お問合せ</button>
+        </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section id="section2" class="section2">
+        <div class="container">
+            <h2>最も影響力のあるデザインカンファレンスの開催が決定</h2>
+            <p>世界で最も革新的な考えを持つ12人のトップクリエイターが集合しデザインについて話し合う3日間。とても刺激的なデザイン会議となります。</p>
+        </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section id="section3" class="section3">
+        <div class="container">
+            <h2>世界中からクリエイターが集まる</h2>
+            <div class="profile">
+                <img src="images/03_left.png" alt="サラ マクラウド氏">
+                <h3>サラ マクラウド氏</h3>
+                <p>クリエイティブ・ディレクター</p>
+            </div>
+            <div class="profile">
+                <img src="images/03_center.png" alt="松井 沙也加氏">
+                <h3>松井 沙也加氏</h3>
+                <p>UI/UXデザイナー</p>
+            </div>
+            <div class="profile">
+                <img src="images/03_right.png" alt="トニー リー氏">
+                <h3>トニー リー氏</h3>
+                <p>デジタルイラストレーター兼作家</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section id="section4" class="section4">
+        <div class="container row">
+            <div class="col text">
+                <h2>デジタルグラフィックの未来を切り開く</h2>
+                <p>今回初めて、オンライン参加者向けにカンファレンスのプライベート配信を行います。すべての講演は録音され、イベント開催から30日後に参加者がダウンロードできるようになります。</p>
+            </div>
+            <div class="col image">
+                <img src="images/04_photo.png" alt="未来の開拓">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5 -->
+    <section id="section5" class="section5">
+        <div class="container">
+            <p>2月21日から23日の期間中、オンライン、または会場でお会いしましょう！</p>
+            <p>早割チケットを購入すると、通常チケットに含まれるすべての特典と限定フリーペーパーを差し上げます。</p>
+            <br><br>
+	</div>
+       <div class="containerform">
+      <h2 class="text-center">お問い合わせ</h2>
+      <form action="#" method="POST">
+        <div class="mb-3">
+          <label for="name">お名前</label>
+          <input type="text" id="name" name="name" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="email">メールアドレス</label>
+          <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="message">お問い合わせ内容</label>
+          <textarea id="message" name="message" rows="4" class="form-control" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">送信</button>
+      </form>
+      </div>
+
+    </section>
+
+    <!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p>© 2025 デジタルグラフィックカンファレンス. All Rights Reserved.</p>
+        <ul>
+            <li><a href="#">プライバシーポリシー</a></li>
+            <li><a href="#">利用規約</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+        </ul>
+    </div>
+</footer>
+
+ <script>
+        function toggleMenu() {
+            var menu = document.getElementById("navMenu");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
+<!--CDNでjQuery読み込む-->
+<script
+src="https://code.jquery.com/jquery-2.2.4.min.js"
+integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
